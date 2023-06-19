@@ -1,0 +1,206 @@
+*{
+    margin: 5px;
+    box-sizing: border-box;
+
+}
+body{
+    height: 95ex;
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+} 
+.bg{
+    background-image: url("../portfolio/media/Screenshot_20230617_211811_Gallery.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-family: 'Manrope' ,sans-serif;
+    font-size: xx-large;
+    color: rgb(27, 80, 194);
+    padding: 3em 0 3em 0;
+}
+header > p{
+    font-size: 30;
+    padding-left: 100;
+    text-decoration: underline;
+    color: black;
+}
+.bars{
+    fill: rgb(136, 64, 64);
+    height: 38px;
+    width: 38px;
+    margin: 10px;
+    cursor: pointer;
+}
+.sidebar{
+    width: 120px;
+    height: 100vh;
+    background-color: rgb(10, 76, 133);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: width .5s ease;
+}
+.sidebaritem{
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebaritem > div{
+    padding: 0 1em;
+}
+.sidebaritem:hover{
+    color: black;
+}
+#overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+svg{
+    height: 5;
+    width: 5;
+    display: flex;
+    flex: 2;
+    align-items: baseline;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+.material-symbols-outlined{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+main{
+    padding: 3em 0 3em 0;
+    flex: 5 5 150px;
+}
+h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 50;
+    color: rgb(23, 97, 161);
+    text-align: center;
+    padding: 3px 0;
+    text-decoration: underline;
+}
+main > p{
+    font-size: 20;
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-right: 290;
+    padding-left: 50;
+}
+h4{
+    font-family:'Nunito', sans-serif;
+    font-size: 40;
+    color: rgb(37, 95, 146);
+    padding: 3px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px 0;
+    text-decoration: underline;
+    color: rgb(37, 95, 146);
+}
+.h5 > p{
+    font-size: 20;
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5 0;
+}
+.skills{
+
+}
+
+@media all and (max-width: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+}
+:root{
+    --fontColor: #650088
+}
+.form{
+    font-family: 'Nunito', sans-serif;
+    background: rgb(47, 113, 172);
+    color: aliceblue;
+    padding-left: 10px;
+    padding: 5 0 5 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    height: 400px;width: 280px;
+    justify-content: center;   
+}
+input{
+    margin-top: 15px;
+    color: aliceblue;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom-color: var(--fontColor) ;
+    color: var(--fontColor);
+}
+input::placeholder{
+    color: var(--fontColor);
+    font-size: 1.2em;
+    font-family: 'Nunito', sans-serif;
+}
+input:focus{
+    outline: none;
+}
+button{
+    color: aliceblue;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background: -webkit-linear-gradient(left, rgb(190, 82, 82), rgb(11, 185, 170));
+    margin: 15px auto 15px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.icons > a{
+    font-size: 1.6em;
+    padding: 3px;
+    color: var(--fontColor);
+    text-decoration: none;
+}
+.icons >a>i:hover{
+    transform: scale(1.2);
+    color: rgb(7, 7, 6);
+}
+footer{
+    font-family: 'Nunito', sans-serif;
+    padding: 3px 0 3px 0;
+    font-weight: bold;
+}
